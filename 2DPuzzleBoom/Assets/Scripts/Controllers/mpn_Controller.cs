@@ -13,22 +13,36 @@ public class mpn_Controller : MonoBehaviour {
 	}
 
 	void Update () {
+		
 		CharMove ();
 	}
 
 	void CharMove(){
 
 		if (Input.GetKey ("up")) {
-			transform.Translate (0, MovSpd * Time.deltaTime, 0);
-		}
-		if (Input.GetKey ("down")) {
-			transform.Translate (0, -MovSpd * Time.deltaTime, 0);
-		}
-		if (Input.GetKey ("right")) {
-			transform.Translate (MovSpd * Time.deltaTime, 0, 0);
-		}
-		if (Input.GetKey ("left")) {
-			transform.Translate (-MovSpd * Time.deltaTime, 0, 0);
+
+			rb2d.AddForce (Vector2.up * MovSpd);
+//			transform.Translate (0, MovSpd * Time.deltaTime, 0);
+//			transform.forward = new Vector3 (0f, 0f, 0f);
+
+		}	else if (Input.GetKey ("down")) {
+
+			rb2d.AddForce (Vector2.down * MovSpd);
+//			transform.Translate (0, -MovSpd * Time.deltaTime, 0);
+//			transform.forward = new Vector3 (0f, 0f, 0f);
+		
+		}	else if (Input.GetKey ("right")) {
+
+			rb2d.AddForce (Vector2.right * MovSpd);
+//			transform.Translate (MovSpd * Time.deltaTime, 0, 0);
+//			transform.forward = new Vector3 (0f, 0f, 0f);
+
+		}	else if (Input.GetKey ("left")) {
+
+			rb2d.AddForce (Vector2.left * MovSpd);
+//			transform.Translate (-MovSpd * Time.deltaTime, 0, 0);
+//			transform.forward = new Vector3 (0f, 0f, 0f);
+
 		}
 	}
 
@@ -39,6 +53,5 @@ public class mpn_Controller : MonoBehaviour {
 //		transform.localRotation = rot;
 //			
 //	}
-
 
 }
