@@ -4,7 +4,9 @@ using UnityEngine.UI;
 
 public class mpn_spawner : MonoBehaviour {
 
-	public GameObject Block;
+	public GameObject redBox;
+	public GameObject yellowBox;
+	public GameObject greenBox;
 	public int maxRed;
 	public int maxYellow;
 	public int maxGreen;
@@ -16,22 +18,19 @@ public class mpn_spawner : MonoBehaviour {
 	public void RedCube()
 	{
 		Vector2 randomPosition = new Vector2 (Random.Range(minX, maxX), Random.Range (minY, maxY));
-		Instantiate (Block, randomPosition, Quaternion.identity);
-		Block.GetComponent<SpriteRenderer> ().color = Color.red;
+		Instantiate (redBox, randomPosition, Quaternion.identity);
 	}
 
 	public void YellowCube()
 	{
 		Vector2 randomPosition = new Vector2 (Random.Range (minX, maxX), Random.Range (minY, maxY));
-		Instantiate (Block, randomPosition, Quaternion.identity);
-		Block.GetComponent<SpriteRenderer> ().color = Color.yellow;
+		Instantiate (yellowBox, randomPosition, Quaternion.identity);
 	}
 
 	public void GreenCube()
 	{
 		Vector2 randomPosition = new Vector2 (Random.Range (minX, maxX), Random.Range (minY, maxY));
-		Instantiate (Block, randomPosition, Quaternion.identity);
-		Block.GetComponent<SpriteRenderer> ().color = Color.green;
+		Instantiate (greenBox, randomPosition, Quaternion.identity);
 	}
 
 }
