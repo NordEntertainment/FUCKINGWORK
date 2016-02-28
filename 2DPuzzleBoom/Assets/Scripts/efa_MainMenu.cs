@@ -1,6 +1,7 @@
 ﻿using UnityEngine;
 using System.Collections;
 using UnityEngine.UI;
+using UnityEngine.SceneManagement;
 
 public class efa_MainMenu : MonoBehaviour
 {
@@ -11,6 +12,6 @@ public class efa_MainMenu : MonoBehaviour
 	public void PlayGame ()
 	{
 
-		Application.LoadLevel ("TestLevel");
+		SceneManager.LoadScene ("TestLevel");
 	}
 }
