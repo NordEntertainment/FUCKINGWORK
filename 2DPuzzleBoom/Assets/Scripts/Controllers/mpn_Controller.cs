@@ -1,7 +1,7 @@
 ﻿using UnityEngine;
 using System.Collections;
 
-public class testController : MonoBehaviour {
+public class mpn_Controller : MonoBehaviour {
 
 	private float MovSpd = 10f;
 

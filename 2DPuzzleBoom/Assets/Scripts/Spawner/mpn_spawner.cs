@@ -2,7 +2,7 @@
 using System.Collections;
 using UnityEngine.UI;
 
-public class SpawnTester : MonoBehaviour {
+public class mpn_spawner : MonoBehaviour {
 
 	public GameObject Block;
 	public int maxRed;

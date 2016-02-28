@@ -1,9 +1,9 @@
 ﻿using UnityEngine;
 using System.Collections;
 
-public class TestLevel : SpawnTester {
+public class mpn_testLevel : mpn_spawner {
 
-	public SpawnTester ST;
+	public mpn_spawner ST;
 
 	void Start () {
 
