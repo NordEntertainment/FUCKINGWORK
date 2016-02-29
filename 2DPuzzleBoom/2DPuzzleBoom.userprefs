@@ -1,19 +1,16 @@
 ﻿<Properties StartupItem="Assembly-CSharp.csproj">
   <MonoDevelop.Ide.Workspace ActiveConfiguration="Debug" PreferredExecutionTarget="Unity.Instance.Unity Editor" />
-<<<<<<< Updated upstream
-  <MonoDevelop.Ide.Workbench ActiveDocument="Assets\Scripts\Spawner\mpn_spawner.cs">
+  <MonoDevelop.Ide.Workbench ActiveDocument="Assets/Scripts/Spawner/LaserSpawner.cs">
     <Files>
-      <File FileName="Assets\Scripts\Spawner\mpn_projectileSpawner.cs" Line="1" Column="1" />
-      <File FileName="Assets\Scripts\Levels\mpn_testLevel.cs" Line="1" Column="1" />
-      <File FileName="Assets\Scripts\Spawner\mpn_spawner.cs" Line="17" Column="1" />
-      <File FileName="Assets\Scripts\Controllers\mpn_Controller.cs" Line="25" Column="3" />
-      <File FileName="Assets\Scripts\ColTes.cs" Line="9" Column="28" />
-=======
-  <MonoDevelop.Ide.Workbench ActiveDocument="../../../../../Dropbox/adventorus/ShapeFlip/New Unity Project/Assets/Scripts/Moving.cs">
-    <Files>
-      <File FileName="Assets/Scripts/efa_MainMenu.cs" Line="15" Column="40" />
-      <File FileName="../../../../../Dropbox/adventorus/ShapeFlip/New Unity Project/Assets/Scripts/Moving.cs" Line="64" Column="22" />
->>>>>>> Stashed changes
+      <File FileName="Assets/Scripts/LevelTrigger.cs" Line="12" Column="2" />
+      <File FileName="Assets/Scripts/Spawner/mpn_spawner.cs" Line="57" Column="3" />
+      <File FileName="Assets/Scripts/Levels/mpn_testLevel.cs" Line="23" Column="15" />
+      <File FileName="Assets/Scripts/Spawner/mpn_projectileSpawner.cs" Line="1" Column="1" />
+      <File FileName="Assets/RespawnPlayer.cs" Line="18" Column="39" />
+      <File FileName="Assets/Scripts/Colliders/PlayerCol.cs" Line="15" Column="20" />
+      <File FileName="Assets/Scripts/Colliders/ColTes.cs" Line="15" Column="19" />
+      <File FileName="Assets/Scripts/Spawner/LaserSpawner.cs" Line="39" Column="3" />
+      <File FileName="Assets/Scripts/Colliders/LasCol.cs" Line="13" Column="9" />
     </Files>
   </MonoDevelop.Ide.Workbench>
   <MonoDevelop.Ide.DebuggingService.Breakpoints>
