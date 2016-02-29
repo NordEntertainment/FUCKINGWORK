@@ -45,8 +45,10 @@
     </Reference>
   </ItemGroup>
   <ItemGroup>
+     <Compile Include="Assets\Scripts\ColTes.cs" />
      <Compile Include="Assets\Scripts\Controllers\mpn_Controller.cs" />
      <Compile Include="Assets\Scripts\Levels\mpn_testLevel.cs" />
+     <Compile Include="Assets\Scripts\Spawner\mpn_projectileSpawner.cs" />
      <Compile Include="Assets\Scripts\Spawner\mpn_spawner.cs" />
      <Compile Include="Assets\Scripts\efa_MainMenu.cs" />
  <Reference Include="UnityEngine.UI">

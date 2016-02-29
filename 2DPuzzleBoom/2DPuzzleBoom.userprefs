@@ -1,28 +1,13 @@
 ﻿<Properties StartupItem="Assembly-CSharp.csproj">
   <MonoDevelop.Ide.Workspace ActiveConfiguration="Debug" PreferredExecutionTarget="Unity.Instance.Unity Editor" />
-  <MonoDevelop.Ide.Workbench ActiveDocument="Assets\Scripts\Controllers\mpn_Controller.cs">
+  <MonoDevelop.Ide.Workbench ActiveDocument="Assets\Scripts\Spawner\mpn_spawner.cs">
     <Files>
-      <File FileName="Assets\Scripts\Controllers\mpn_Controller.cs" Line="4" Column="18" />
-      <File FileName="Assets\Scripts\Levels\mpn_testLevel.cs" Line="6" Column="20" />
-      <File FileName="Assets\Scripts\Spawner\mpn_spawner.cs" Line="5" Column="25" />
+      <File FileName="Assets\Scripts\Spawner\mpn_projectileSpawner.cs" Line="1" Column="1" />
+      <File FileName="Assets\Scripts\Levels\mpn_testLevel.cs" Line="1" Column="1" />
+      <File FileName="Assets\Scripts\Spawner\mpn_spawner.cs" Line="17" Column="1" />
+      <File FileName="Assets\Scripts\Controllers\mpn_Controller.cs" Line="25" Column="3" />
+      <File FileName="Assets\Scripts\ColTes.cs" Line="9" Column="28" />
     </Files>
-    <Pads>
-      <Pad Id="ProjectPad">
-        <State name="__root__">
-          <Node name="2DPuzzleBoom" expanded="True">
-            <Node name="Assembly-CSharp" expanded="True">
-              <Node name="Scripts" expanded="True">
-                <Node name="Controllers" expanded="True">
-                  <Node name="mpn_Controller.cs" selected="True" />
-                </Node>
-                <Node name="Levels" expanded="True" />
-                <Node name="Spawner" expanded="True" />
-              </Node>
-            </Node>
-          </Node>
-        </State>
-      </Pad>
-    </Pads>
   </MonoDevelop.Ide.Workbench>
   <MonoDevelop.Ide.DebuggingService.Breakpoints>
     <BreakpointStore />
