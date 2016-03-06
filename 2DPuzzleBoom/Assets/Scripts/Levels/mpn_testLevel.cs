@@ -4,24 +4,34 @@ using System.Collections;
 public class mpn_testLevel : mpn_spawner
 {
 
+	public bool CRed;
+	public bool CYellow;
+	public bool CGreen;
+	public bool CLaser;
+
+
 	public mpn_spawner ST;
 
 	void Start ()
 	{
-
-		for (int i = 0; i < maxRed; i++) {
-			RedCube ();
+		if (CRed) {
+			for (int i = 0; i < maxRed; i++) {
+				RedCube ();
+			}
 		}
-		for (int i = 0; i < maxYellow; i++) {
-			YellowCube ();
+		if (CYellow) {
+			for (int i = 0; i < maxYellow; i++) {
+				YellowCube ();
+			}
 		}
-		for (int i = 0; i < maxGreen; i++) {
-			GreenCube ();
+		if (CGreen) {
+			for (int i = 0; i < maxGreen; i++) {
+				GreenCube ();
+			}
 		}
-
-		PlayerSpawn ();
-		LaserBox ();
+		if(CLaser)	
+			LaserBox ();
 	
-		
+		PlayerSpawn ();
 	}
 }
