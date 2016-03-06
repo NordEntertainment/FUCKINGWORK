@@ -12,7 +12,7 @@ public class ColTes : MonoBehaviour
 		if (col.gameObject.tag.Equals ("Blocks")) {
 
 			Destroy (this.gameObject);
-			print ("boom");
+//			print ("boom");
 		}
 	}
 }
