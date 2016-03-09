@@ -8,7 +8,7 @@ public class mpn_DrawLas : MonoBehaviour
 	private float tikk;
 	private float dist;
 
-
+	public bool RaycastDebug;
 	public Transform LasBirth;
 	public Transform LasDeath;
 
@@ -39,7 +39,7 @@ public class mpn_DrawLas : MonoBehaviour
 
 		pointA = LasBirth.position;
 
-		if (LHit.collider != null)
+		if (LHit.collider != null && RaycastDebug)
 			Debug.Log (LHit.collider.name);
 		
 		if (LHit.collider.name == "_testChar(Clone)") {
