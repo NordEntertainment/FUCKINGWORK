@@ -26,7 +26,6 @@ public class LevelOnePPlate : MonoBehaviour
 
 	void OnTriggerStay2D (Collider2D col)
 	{
-
 		if (col.gameObject.tag.Equals ("redBox")) {
 			Destroy (GameObject.Find ("_exitLaserTest"));
 

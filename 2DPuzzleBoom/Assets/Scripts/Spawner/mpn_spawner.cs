@@ -56,5 +56,6 @@ public class mpn_spawner : MonoBehaviour
 	{
 		Vector2 PlayerPos = new Vector2 (PlrX, PlrY);
 		Instantiate (player, PlayerPos, Quaternion.identity);
+
 	}
 }

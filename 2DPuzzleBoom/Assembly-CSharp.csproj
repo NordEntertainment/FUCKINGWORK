@@ -46,20 +46,16 @@
   </ItemGroup>
   <ItemGroup>
      <Compile Include="Assets\LineLaser.cs" />
+     <Compile Include="Assets\Scripts\Action\eaf_greenBoxBehaviour.cs" />
+     <Compile Include="Assets\Scripts\Action\exitTrigger.cs" />
      <Compile Include="Assets\Scripts\Action\mpn_DrawLas.cs" />
      <Compile Include="Assets\Scripts\Action\mpn_pressurePlate.cs" />
      <Compile Include="Assets\Scripts\Action\mpn_redBoxBehaviour.cs" />
-     <Compile Include="Assets\Scripts\Colliders\ColTes.cs" />
-     <Compile Include="Assets\Scripts\Colliders\DestroyBoxCol.cs" />
-     <Compile Include="Assets\Scripts\Colliders\LasCol.cs" />
-     <Compile Include="Assets\Scripts\Colliders\PlayerCol.cs" />
-     <Compile Include="Assets\Scripts\Colliders\mpn_LasCol_LineRend.cs" />
+     <Compile Include="Assets\Scripts\Action\projectileCol.cs" />
      <Compile Include="Assets\Scripts\Controllers\mpn_Controller.cs" />
      <Compile Include="Assets\Scripts\LevelTrigger.cs" />
      <Compile Include="Assets\Scripts\Levels\LevelOnePPlate.cs" />
      <Compile Include="Assets\Scripts\Levels\mpn_testLevel.cs" />
-     <Compile Include="Assets\Scripts\Spawner\LaserSpawner.cs" />
-     <Compile Include="Assets\Scripts\Spawner\PlayerSpawner.cs" />
      <Compile Include="Assets\Scripts\Spawner\RespawnPlayer.cs" />
      <Compile Include="Assets\Scripts\Spawner\mpn_projectileSpawner.cs" />
      <Compile Include="Assets\Scripts\Spawner\mpn_spawner.cs" />

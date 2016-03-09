@@ -1,7 +1,7 @@
 ﻿using UnityEngine;
 using System.Collections;
 
-public class ColTes : MonoBehaviour
+public class projectileCol : MonoBehaviour
 {
 
 	public Collision2D col;

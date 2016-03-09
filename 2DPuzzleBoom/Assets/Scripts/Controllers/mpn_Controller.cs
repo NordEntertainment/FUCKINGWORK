@@ -1,5 +1,6 @@
 ﻿using UnityEngine;
 using System.Collections;
+using UnityEngine.SceneManagement;
 
 public class mpn_Controller : MonoBehaviour {
 
@@ -14,7 +15,12 @@ public class mpn_Controller : MonoBehaviour {
 	}
 
 	void Update () {
-		
+
+		if (Input.GetKeyDown (KeyCode.Escape)) { 
+			SceneManager.LoadScene ("MainMenu");
+
+		}
+
 		CharMove ();
 	}
 
