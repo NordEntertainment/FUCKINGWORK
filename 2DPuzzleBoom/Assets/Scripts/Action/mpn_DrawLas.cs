@@ -1,7 +1,8 @@
 ﻿using UnityEngine;
 using System.Collections;
 
-public class mpn_DrawLas : MonoBehaviour {
+public class mpn_DrawLas : MonoBehaviour
+{
 
 	private LineRenderer LR;
 	private float tikk;
@@ -17,7 +18,8 @@ public class mpn_DrawLas : MonoBehaviour {
 	private Vector3 pointA;
 	private Vector3 pointB;
 
-	void Start () {
+	void Start ()
+	{
 	
 		LR = GetComponent<LineRenderer> ();
 		LR.SetPosition (0, LasBirth.position);
@@ -29,7 +31,8 @@ public class mpn_DrawLas : MonoBehaviour {
 
 	
 
-	void Update () {
+	void Update ()
+	{
 		RaycastHit2D LHit = Physics2D.Raycast (LasBirth.position, LasBirth.right);
 //		dist = Vector3.Distance (LasBirth.position, LasDeath.position); 
 
@@ -41,12 +44,12 @@ public class mpn_DrawLas : MonoBehaviour {
 		
 		if (LHit.collider.name == "_testChar(Clone)") {
 
-			Destroy(GameObject.Find("_testChar(Clone)"));
+			Destroy (GameObject.Find ("_testChar(Clone)"));
 
 		}
 		if (LHit.collider.name == "Projectile(Clone)") {
 
-			Destroy(GameObject.Find("Projectile(Clone)"));
+			Destroy (GameObject.Find ("Projectile(Clone)"));
 
 		}
 
@@ -65,7 +68,7 @@ public class mpn_DrawLas : MonoBehaviour {
 
 		}
 
-		if (LHit.collider.name == "_test_LDeath") {
+		if (LHit.collider.name == "LDeath") {
 
 			tikk += 0.1f / DrawSpeed;
 
