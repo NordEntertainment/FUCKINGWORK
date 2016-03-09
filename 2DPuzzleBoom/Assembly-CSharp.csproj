@@ -38,16 +38,15 @@
     <Reference Include="System.Core" />
     <Reference Include="System.Xml.Linq" />
     <Reference Include="UnityEngine">
-      <HintPath>D:/Program Files/Unity/Editor/Data/Managed/UnityEngine.dll</HintPath>
+      <HintPath>G:/Unity/Editor/Data/Managed/UnityEngine.dll</HintPath>
     </Reference>
     <Reference Include="UnityEditor">
-      <HintPath>D:/Program Files/Unity/Editor/Data/Managed/UnityEditor.dll</HintPath>
+      <HintPath>G:/Unity/Editor/Data/Managed/UnityEditor.dll</HintPath>
     </Reference>
   </ItemGroup>
   <ItemGroup>
      <Compile Include="Assets\LineLaser.cs" />
      <Compile Include="Assets\Scripts\Action\mpn_DrawLas.cs" />
-     <Compile Include="Assets\Scripts\Action\mpn_DrawLas2.cs" />
      <Compile Include="Assets\Scripts\Action\mpn_pressurePlate.cs" />
      <Compile Include="Assets\Scripts\Action\mpn_redBoxBehaviour.cs" />
      <Compile Include="Assets\Scripts\Colliders\ColTes.cs" />
@@ -65,10 +64,10 @@
      <Compile Include="Assets\Scripts\Spawner\mpn_spawner.cs" />
      <Compile Include="Assets\Scripts\efa_MainMenu.cs" />
  <Reference Include="UnityEngine.UI">
- <HintPath>D:/Program Files/Unity/Editor/Data/UnityExtensions/Unity/GUISystem/UnityEngine.UI.dll</HintPath>
+ <HintPath>G:/Unity/Editor/Data/UnityExtensions/Unity/GUISystem/UnityEngine.UI.dll</HintPath>
  </Reference>
  <Reference Include="UnityEngine.Networking">
- <HintPath>D:/Program Files/Unity/Editor/Data/UnityExtensions/Unity/Networking/UnityEngine.Networking.dll</HintPath>
+ <HintPath>G:/Unity/Editor/Data/UnityExtensions/Unity/Networking/UnityEngine.Networking.dll</HintPath>
  </Reference>
   </ItemGroup>
   <Import Project="$(MSBuildToolsPath)\Microsoft.CSharp.targets" />
