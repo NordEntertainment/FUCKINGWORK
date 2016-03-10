@@ -16,7 +16,7 @@ public class RespawnPlayer : mpn_spawner
 	{
 	
 		if (GameObject.FindGameObjectWithTag ("Player") == null) {
-			Vector2 PlayerPos = new Vector2 (-7.2f, -4.2f);
+			Vector2 PlayerPos = new Vector2 (-7.5f, -4.375f);
 			Instantiate (player, PlayerPos, Quaternion.identity);
 		}
 
