@@ -1,5 +1,7 @@
 ﻿using UnityEngine;
 using System.Collections;
+using System;
+
 
 public class mpn_pressurePlate : MonoBehaviour
 {
@@ -24,32 +26,36 @@ public class mpn_pressurePlate : MonoBehaviour
 	public GameObject NewBox;
 
 
+		//Swap More Boxes
+		public bool ColorSwapX1;
+		private Transform TargetLocX1;
+		public GameObject TargetBoxX1;
+		public GameObject NewBoxX1;
+
+		public bool ColorSwapX2;
+		private Transform TargetLocX2;
+		public GameObject TargetBoxX2;
+		public GameObject NewBoxX2;
+
+
 
 	void Start ()
 	{
 		gameObject.layer = 1;
-		if (LaserPP) {
-			
-			HiddenLaser.gameObject.SetActive (false);
-			
-			ActiveLaser.gameObject.SetActive (true);
-		}
 
-		/*if (LaserSwitch)
-			SHiddenLaser.gameObject.SetActive (false);*/
-
-			
 		PPColor = GetComponent<SpriteRenderer> ();
 		PPcollider = GetComponent<BoxCollider2D> ();
-
-			
+		if (LaserPP) 
+		{
+			HiddenLaser.gameObject.SetActive (false);
+			ActiveLaser.gameObject.SetActive (true);
+		}			
 	}
 
 	void Update ()
 	{
 		if (PPColor.color == Color.red)
-			PPcollider.enabled = false;
-			
+			PPcollider.enabled = false;	
 	}
 
 	void OnTriggerStay2D (Collider2D col)
@@ -59,7 +65,8 @@ public class mpn_pressurePlate : MonoBehaviour
 				Destroy (GameObject.Find ("_exitLaserTest"));
 				PPColor.color = Color.red;
 			}
-		}		
+		}
+
 		if (LaserPP) {
 			if (!PPtrigged) {
 				if (col.gameObject.tag.Equals ("redBox")) {
@@ -73,16 +80,33 @@ public class mpn_pressurePlate : MonoBehaviour
 
 		if (ColorSwap) {
 			if (col.gameObject.tag.Equals ("redBox")) {
-				
 				Destroy (TargetBox);
 				GameObject BoxSwap = Instantiate (NewBox, TargetBox.transform.position, Quaternion.identity) as GameObject;
 				BoxSwap.name = "_redBox";
 				ColorSwap = false;
 				PPColor.color = Color.red;
-				
 			}
 		}
 
+		if (ColorSwapX1) {
+			if (col.gameObject.tag.Equals ("redBox")) {
+				Destroy (TargetBoxX1);
+				GameObject BoxSwap = Instantiate (NewBoxX1, TargetBoxX1.transform.position, Quaternion.identity) as GameObject;
+				BoxSwap.name = "_redBox";
+				ColorSwapX1 = false;
+				PPColor.color = Color.red;
+			}
+		}
+
+		if (ColorSwapX2) {
+			if (col.gameObject.tag.Equals ("redBox")) {
+				Destroy (TargetBoxX2);
+				GameObject BoxSwap = Instantiate (NewBoxX2, TargetBoxX1.transform.position, Quaternion.identity) as GameObject;
+				BoxSwap.name = "_redBox";
+				ColorSwapX2 = false;
+				PPColor.color = Color.red;
+			}
+		}
 		if (LaserSwitch) {
 			if (!SPPtrigged) {
 				if (col.gameObject.tag.Equals ("redBox")) {
