@@ -1,8 +1,8 @@
 ﻿<Properties StartupItem="Assembly-CSharp.csproj">
   <MonoDevelop.Ide.Workspace ActiveConfiguration="Debug" PreferredExecutionTarget="Unity.Instance.Unity Editor" />
-  <MonoDevelop.Ide.Workbench ActiveDocument="Assets\Scripts\Action\exitTrigger.cs">
+  <MonoDevelop.Ide.Workbench ActiveDocument="Assets\Scripts\Controllers\mpn_Controller.cs">
     <Files>
-      <File FileName="Assets\Scripts\Action\mpn_DrawLas.cs" Line="42" Column="44" />
+      <File FileName="Assets\Scripts\Action\mpn_DrawLas.cs" Line="75" Column="19" />
       <File FileName="Assets\Scripts\Levels\LevelOnePPlate.cs" Line="20" Column="3" />
       <File FileName="Assets\Scripts\Action\mpn_pressurePlate.cs" Line="7" Column="23" />
       <File FileName="Assets\Scripts\Action\mpn_redBoxBehaviour.cs" Line="19" Column="63" />
@@ -14,6 +14,13 @@
       <File FileName="Assets\Scripts\Action\exitTrigger.cs" Line="5" Column="43" />
       <File FileName="Assets\Scripts\Controllers\mpn_Controller.cs" Line="3" Column="18" />
     </Files>
+    <Pads>
+      <Pad Id="ClassPad">
+        <State name="__root__">
+          <Node name="2DPuzzleBoom" expanded="True" selected="True" />
+        </State>
+      </Pad>
+    </Pads>
   </MonoDevelop.Ide.Workbench>
   <MonoDevelop.Ide.DebuggingService.Breakpoints>
     <BreakpointStore />
