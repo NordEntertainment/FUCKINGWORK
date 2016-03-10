@@ -1,5 +1,7 @@
 ﻿using UnityEngine;
 using System.Collections;
+using UnityEngine.SceneManagement;
+
 
 public class mpn_DrawLas : MonoBehaviour
 {
@@ -45,6 +47,7 @@ public class mpn_DrawLas : MonoBehaviour
 		if (LHit.collider.name == "_testChar(Clone)") {
 
 			Destroy (GameObject.Find ("_testChar(Clone)"));
+			SceneManager.LoadScene (Application.loadedLevel);
 
 		}
 		if (LHit.collider.name == "Projectile(Clone)") {
