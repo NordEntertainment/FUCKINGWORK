@@ -1,22 +1,27 @@
 ﻿using UnityEngine;
 using System.Collections;
 
-public class mpn_redBoxBehaviour : MonoBehaviour {
+public class mpn_redBoxBehaviour : MonoBehaviour
+{
 
-	public Transform PPPosition;
+	//public Transform PPPosition;
 
-	void Start () {
+	void Start ()
+	{
 	
 	}
 
-	void Update () {
+	void Update ()
+	{
 	
 	}
-	void OnTriggerStay2D(Collider2D col){
-	
-		if(col.gameObject.tag.Equals("PressurePlate")){
 
-			this.gameObject.transform.position = PPPosition.transform.position;
+	void OnTriggerStay2D (Collider2D col)
+	{
+	
+		if (col.gameObject.tag.Equals ("PressurePlate")) {
+			Destroy (this.gameObject);
+			//this.gameObject.transform.position = PPPosition.transform.position;
 
 		}
 

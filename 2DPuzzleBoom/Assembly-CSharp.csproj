@@ -46,6 +46,7 @@
   </ItemGroup>
   <ItemGroup>
      <Compile Include="Assets\LineLaser.cs" />
+     <Compile Include="Assets\Scripts\Action\LightBulbCol.cs" />
      <Compile Include="Assets\Scripts\Action\eaf_greenBoxBehaviour.cs" />
      <Compile Include="Assets\Scripts\Action\exitTrigger.cs" />
      <Compile Include="Assets\Scripts\Action\mpn_DrawLas.cs" />
