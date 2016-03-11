@@ -25,17 +25,20 @@ public class mpn_pressurePlate : MonoBehaviour
 	public GameObject TargetBox;
 	public GameObject NewBox;
 
+	//Swap More Boxes
+	public bool ColorSwapX1;
+	private Transform TargetLocX1;
+	public GameObject TargetBoxX1;
+	public GameObject NewBoxX1;
 
-		//Swap More Boxes
-		public bool ColorSwapX1;
-		private Transform TargetLocX1;
-		public GameObject TargetBoxX1;
-		public GameObject NewBoxX1;
+	public bool ColorSwapX2;
+	private Transform TargetLocX2;
+	public GameObject TargetBoxX2;
+	public GameObject NewBoxX2;
 
-		public bool ColorSwapX2;
-		private Transform TargetLocX2;
-		public GameObject TargetBoxX2;
-		public GameObject NewBoxX2;
+	//LaserShooting
+	public bool LaserShoot;
+	public GameObject LaserBullet;
 
 
 
@@ -45,8 +48,7 @@ public class mpn_pressurePlate : MonoBehaviour
 
 		PPColor = GetComponent<SpriteRenderer> ();
 		PPcollider = GetComponent<BoxCollider2D> ();
-		if (LaserPP) 
-		{
+		if (LaserPP) {
 			HiddenLaser.gameObject.SetActive (false);
 			ActiveLaser.gameObject.SetActive (true);
 		}			

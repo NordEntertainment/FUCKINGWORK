@@ -35,6 +35,9 @@ public class mpn_DrawLas : MonoBehaviour
 
 	void Update ()
 	{
+
+		string CurrentScene = SceneManager.GetActiveScene ().name;
+
 		RaycastHit2D LHit = Physics2D.Raycast (LasBirth.position, LasBirth.right);
 //		dist = Vector3.Distance (LasBirth.position, LasDeath.position); 
 
@@ -47,7 +50,7 @@ public class mpn_DrawLas : MonoBehaviour
 		if (LHit.collider.name == "_testChar(Clone)") {
 
 			Destroy (GameObject.Find ("_testChar(Clone)"));
-			SceneManager.LoadScene (Application.loadedLevel);
+			SceneManager.LoadScene (CurrentScene, LoadSceneMode.Single);
 
 		}
 		if (LHit.collider.name == "Projectile(Clone)") {
