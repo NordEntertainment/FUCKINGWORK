@@ -37,8 +37,11 @@ public class mpn_pressurePlate : MonoBehaviour
 	public GameObject NewBoxX2;
 
 	//LaserShooting
-	public bool LaserShoot;
+	public bool LaserShoot = false;
 	public GameObject LaserBullet;
+	private GameObject Laser;
+	private float Speed = 3f;
+	private Rigidbody2D Laserrbd;
 
 
 
@@ -58,6 +61,7 @@ public class mpn_pressurePlate : MonoBehaviour
 	{
 		if (PPColor.color == Color.red)
 			PPcollider.enabled = false;	
+		
 	}
 
 	void OnTriggerStay2D (Collider2D col)
@@ -118,5 +122,27 @@ public class mpn_pressurePlate : MonoBehaviour
 				}
 			}
 		}
+	
+		if (LaserShoot) {
+			if (col.gameObject.tag.Equals ("redBox")) {
+				InvokeRepeating ("LaserShootInvoke", 0f, 2f);
+
+
+			}
+		}
 	}
+
+	public void LaserShootInvoke ()
+	{
+		
+		PPColor.color = Color.red;
+		Vector2 LaserPos = new Vector2 (2f, 6f);
+		Laser = Instantiate (LaserBullet, LaserPos, Quaternion.Euler (0, 0, 90)) as GameObject;
+		Laser.name = "LaserShot";
+		Laser = GameObject.Find ("LaserShot");
+		Laserrbd = Laser.GetComponent<Rigidbody2D> ();
+		Laserrbd.velocity = new Vector2 (0, -10);
+		Destroy (Laser, 2f);
+	}
+		
 }
