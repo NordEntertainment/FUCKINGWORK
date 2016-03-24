@@ -40,7 +40,10 @@ public class mpn_pressurePlate : MonoBehaviour
 	public bool LaserShoot = false;
 	public GameObject LaserBullet;
 	private GameObject Laser;
+<<<<<<< HEAD
 	//private float Speed = 3f;
+=======
+>>>>>>> origin/master
 	private Rigidbody2D Laserrbd;
 
 
